@@ -1,0 +1,176 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+@font-face {
+    font-family: 'font';
+    src: url("../font/B Mitra Bold.ttf") format("woff");
+}
+html, body{
+    height: 100%;
+    font-family: 'font';
+}
+/*register*/
+.input-name{
+    position: relative;
+    overflow: hidden;
+}
+.input-name .form-control{
+    border: none;
+    border-bottom: 2px solid #dddddd;
+    outline: none;
+}
+
+.underline-animation{
+    transition: all 0.5s;
+    display: inline-block;
+    bottom: 0;
+    right: -100%;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #ab0000;
+}
+.input-name input:focus + .underline-animation{
+    right: 0;
+}
+/*end of register*/
+.section1 {
+    background-image: url("../images/6.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+.dropdown>.dropdown-toggle:active {
+    pointer-events: none;
+}
+#active{
+    background-color: #ab0000;
+}
+section .nav-item .nav-link{
+    margin: 0px 15px;
+    color: #fff !important;
+}
+section .nav-item{
+    padding: 3px 5px;
+}
+.underline-hover{
+    display: inline-block;
+    position: relative;
+    color: #ab0000;
+}
+.underline-hover:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ab0000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+.underline-hover:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+#brand{
+    background-color: #ab0000;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10%;
+    font-weight: bolder;
+    font-size: 1.4em;
+}
+#brand b{
+    color: #000;
+}
+#start{
+    color: #fff;
+    padding-top: 25%;
+}
+#start b{
+    font-size: 25pt;
+    font-weight: bolder;
+    color: #fff;
+    padding: 0px 5px;
+    background: rgba(0, 0, 0, 0.18);
+}
+.join-us{
+    background-color: black;
+    font-size: 15pt;
+    color: #fff;
+    padding: 10px 35px;
+    border-color: #ab0000;
+    border-radius: 0;
+    transition: 0.4s;
+}
+.join-us:hover{
+    background-color: #ab0000;
+}
+.advises{
+    background-color: #dddddd;
+    padding: 6% 0px;
+}
+.advises span{
+    font-size: 40pt;
+}
+.col-lg-2{
+    padding: 0px 0px;
+}
+#buy .card{
+    border: 0.5px solid #ccc;
+    border-radius: unset;
+    background-color: #f7f7f7;
+    transition: 0.4s;
+}
+#buy .card:hover{
+    border: none;
+    box-shadow: 0 0 30px #f7f7f7;
+}
+#buy .card .btn{
+    background-color: #000;
+    border: none;
+    border-radius: unset;
+    color: #fff;
+    padding: 5px 45px;
+}
+#buy .card .btn:hover{
+    background-color: #ab0000;
+}
+#buy .card .fa-times{
+    color: #ab0000;
+}
+#buy .card .fa-check{
+    color: #1d9137;
+}
+#contact-us{
+    background-color: #dddddd;
+}
+#contact-us .icon{
+    font-size: 30px;
+}
+#contact-us p{
+    font-size: 20px;
+}
